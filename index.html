@@ -9,11 +9,12 @@
 	<!-- Fav Icon  -->
 	<link rel="shortcut icon" href="images/favicon.png">
 	<!-- Site Title  -->
-	<title>AppsLand - App Landing HTML Template</title>
+	<title>Slotize</title>
 	<!-- Vendor Bundle CSS -->
 	<link rel="stylesheet" href="assets/css/vendor.bundle.css">
 	<!-- Custom styles for this template -->
 	<link href="assets/css/style.css?ver=131" rel="stylesheet">
+	<link href="assets/css/modal.css?ver=131" rel="stylesheet">
 	<link href="assets/css/theme-blue-green.css?ver=131" rel="stylesheet">
 </head>
 
@@ -22,6 +23,16 @@
 	<!-- Start .header-section -->
 	<div id="home"
 		class="header-section section gradiant-background header-curbed-circle background-circles header-software">
+
+		<div id="cookieConsent" class="d-none">
+			<div class="container cookieConsentContainer">
+				<p class="text-white mb-0 col-md-8">We use cookies to ensure you get the best experience on our website.</p>
+				<div class="col-md-4 text-md-end mt-2 mt-md-0">
+					<button id="acceptCookies" class="btn btn-success me-2">Accept</button>
+					<button id="rejectCookies" class="btn btn-danger">Reject</button>
+				</div>
+			</div>
+		</div>
 		<div id="particles-js" class="particles-container"></div>
 		<div id="navigation" class="navigation is-transparent" data-spy="affix" data-offset-top="5">
 			<nav class="navbar navbar-default">
@@ -144,7 +155,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="feature-box">
 						<div class="box-icon box-icon-small">
-							<em class="ti ti-layers"></em>
+							<em class="ti ti-calendar"></em>
 						</div>
 						<h4>Effortless Appointment Management</h4>
 						<p>Streamline bookings and stay on top of your schedule with ease</p>
@@ -153,7 +164,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="feature-box">
 						<div class="box-icon box-icon-small">
-							<em class="ti ti-layers"></em>
+							<em class="ti ti-email"></em>
 						</div>
 						<h4>Automated Email Reminders</h4>
 						<p>Send timely reminders to clients, ensuring they never miss an appointment</p>
@@ -162,7 +173,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="feature-box">
 						<div class="box-icon box-icon-small">
-							<em class="ti ti-layers"></em>
+							<em class="ti ti-dashboard"></em>
 						</div>
 						<h4>Intuitive Client Dashboard</h4>
 						<p>A simple and user-friendly interface to manage your appointments effortlessly</p>
@@ -171,7 +182,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="feature-box">
 						<div class="box-icon box-icon-small">
-							<em class="ti ti-layers"></em>
+							<em class="ti ti-bar-chart"></em>
 						</div>
 						<h4>Analytics Dashboard</h4>
 						<p>Gain valuable insights into scheduling trends and client activity</p>
@@ -180,7 +191,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="feature-box">
 						<div class="box-icon box-icon-small">
-							<em class="ti ti-layers"></em>
+							<em class="ti ti-mobile"></em>
 						</div>
 						<h4>Mobile-Friendly Design</h4>
 						<p>Access your scheduling platform anywhere, anytime</p>
@@ -189,7 +200,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="feature-box">
 						<div class="box-icon box-icon-small">
-							<em class="ti ti-layers"></em>
+							<em class="ti ti-wand"></em>
 						</div>
 						<h4>Seamless Tool Integration</h4>
 						<p>Sync with Google Calendar, Outlook, and CRMs</p>
@@ -200,7 +211,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="feature-box">
 						<div class="box-icon box-icon-small">
-							<em class="ti ti-layers"></em>
+							<em class="ti ti-settings"></em>
 						</div>
 						<h4>Customizable Settings</h4>
 						<p>Tailor SLOTIZE to your brand with branded templates and flexible scheduling options</p>
@@ -209,7 +220,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="feature-box">
 						<div class="box-icon box-icon-small">
-							<em class="ti ti-layers"></em>
+							<em class="ti ti-support"></em>
 						</div>
 						<h4>Dedicated Support</h4>
 						<p>24/7 support to keep your operations running smoothly</p>
@@ -218,7 +229,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="feature-box">
 						<div class="box-icon box-icon-small">
-							<em class="ti ti-layers"></em>
+							<em class="ti ti-arrow-up"></em>
 						</div>
 						<h4>Scalable Solution</h4>
 						<p>Designed to grow with your business, whether you're a freelancer, small business, or large
@@ -399,7 +410,7 @@
 						<div class="pricing-top gradiant-background">
 							<h5>Starter Plan</h5>
 							<h2>₹15,000</h2>
-							<p>per month</p>
+							<h4>per month</h4>
 						</div>
 						<div class="pricing-bottom">
 							<ul class="text-left">
@@ -417,7 +428,7 @@
 							<span class="pricing-badge">Most Popular</span>
 							<h5>Flexible Payment</h5>
 							<h2>Monthly</h2>
-							<p>or quarterly</p>
+							<h4>or quarterly</h4>
 						</div>
 						<div class="pricing-bottom">
 							<ul class="text-left">
@@ -434,7 +445,7 @@
 						<div class="pricing-top gradiant-background">
 							<h5>Enterprise</h5>
 							<h2>Custom</h2>
-							<p>solutions</p>
+							<h4>solutions</h4>
 						</div>
 						<div class="pricing-bottom">
 							<ul class="text-left">
@@ -449,151 +460,6 @@
 			</div>
 		</div>
 	</div>
-
-
-	<!-- Start .faq-section  -->
-	<div class="faq-section section white-bg pt-120 pb-100">
-		<div class="container">
-			<div class="faq-alt">
-				<div class="row tab-fix">
-					<div class="col-md-4 tab-center mobile-center col-md-offset-1">
-						<div class="side-heading">
-							<h2 class="heading">AppsLand <span>FAQ</span></h2>
-							<p>We got you coverd, check those faq if its not there just <a class="nav-item"
-									href="#contacts">ask</a> us.</p>
-						</div>
-					</div><!-- .col  -->
-					<div class="col-md-6">
-						<!-- Accordion -->
-						<div class="panel-group accordion" id="another" role="tablist" aria-multiselectable="true">
-							<!-- each panel for accordion -->
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="accordion-i1">
-									<h6 class="panel-title">
-										<a role="button" data-toggle="collapse" data-parent="#another"
-											href="#accordion-pane-i1" aria-expanded="false">
-											Is this app free to use for business or commercial use ?
-											<span class="plus-minus"><span></span></span>
-										</a>
-									</h6>
-								</div>
-								<div id="accordion-pane-i1" class="panel-collapse collapse in" role="tabpanel"
-									aria-labelledby="accordion-i1">
-									<div class="panel-body">
-										<p>Internal audit is an independent, objective assurance and consulting activity
-											designed to add value and improve an organization an independent, objective
-											assurance and consulting activity.</p>
-									</div>
-								</div>
-							</div>
-							<!-- each panel for accordion -->
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="accordion-i2">
-									<h6 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#another"
-											href="#accordion-pane-i2" aria-expanded="false">
-											How do i make a support request with this app?
-											<span class="plus-minus"><span></span></span>
-										</a>
-									</h6>
-								</div>
-								<div id="accordion-pane-i2" class="panel-collapse collapse" role="tabpanel"
-									aria-labelledby="accordion-i2">
-									<div class="panel-body">
-										<p>Internal audit is an independent, objective assurance and consulting activity
-											designed to add value and improve an organization an independent, objective
-											assurance and consulting activity.</p>
-									</div>
-								</div>
-							</div>
-							<!-- each panel for accordion -->
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="accordion-i3">
-									<h6 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#another"
-											href="#accordion-pane-i3" aria-expanded="false">
-											How and where can we download latest update ?
-											<span class="plus-minus"><span></span></span>
-										</a>
-									</h6>
-								</div>
-								<div id="accordion-pane-i3" class="panel-collapse collapse" role="tabpanel"
-									aria-labelledby="accordion-i3">
-									<div class="panel-body">
-										<p>Internal audit is an independent, objective assurance and consulting activity
-											designed to add value and improve an organization an independent, objective
-											assurance and consulting activity.</p>
-									</div>
-								</div>
-							</div>
-							<!-- each panel for accordion -->
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="accordion-i4">
-									<h6 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#another"
-											href="#accordion-pane-i4" aria-expanded="false">
-											Is there any premium version with extended features ?
-											<span class="plus-minus"><span></span></span>
-										</a>
-									</h6>
-								</div>
-								<div id="accordion-pane-i4" class="panel-collapse collapse" role="tabpanel"
-									aria-labelledby="accordion-i4">
-									<div class="panel-body">
-										<p>Internal audit is an independent, objective assurance and consulting activity
-											designed to add value and improve an organization an independent, objective
-											assurance and consulting activity.</p>
-									</div>
-								</div>
-							</div><!-- end each panel -->
-							<!-- each panel for accordion -->
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="accordion-i5">
-									<h6 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#another"
-											href="#accordion-pane-i5" aria-expanded="false">
-											Where do i find any details documentation ?
-											<span class="plus-minus"><span></span></span>
-										</a>
-									</h6>
-								</div>
-								<div id="accordion-pane-i5" class="panel-collapse collapse" role="tabpanel"
-									aria-labelledby="accordion-i5">
-									<div class="panel-body">
-										<p>Internal audit is an independent, objective assurance and consulting activity
-											designed to add value and improve an organization an independent, objective
-											assurance and consulting activity.</p>
-									</div>
-								</div>
-							</div><!-- end each panel -->
-							<!-- each panel for accordion -->
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="accordion-i6">
-									<h6 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#another"
-											href="#accordion-pane-i6" aria-expanded="false">
-											Are you gays aviable for making custom apps ?
-											<span class="plus-minus"><span></span></span>
-										</a>
-									</h6>
-								</div>
-								<div id="accordion-pane-i6" class="panel-collapse collapse" role="tabpanel"
-									aria-labelledby="accordion-i6">
-									<div class="panel-body">
-										<p>Internal audit is an independent, objective assurance and consulting activity
-											designed to add value and improve an organization an independent, objective
-											assurance and consulting activity.</p>
-									</div>
-								</div>
-							</div><!-- end each panel -->
-						</div><!-- Accordion #end -->
-					</div><!-- .col  -->
-				</div><!-- .row  -->
-			</div><!-- .faq  -->
-		</div><!-- .container  -->
-	</div><!-- .faq-section  -->
-
-
 
 
 
@@ -653,76 +519,43 @@
 		</div><!-- .container  -->
 	</div><!-- .testimonial-section  -->
 
+	
 
-	<!-- Start .contact-section  -->
-	<div id="contacts" class="contact-section section gradiant-background pb-90">
-		<div class="container">
-			<div class="section-head heading-light text-center">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<h2 class="heading heading-light">Get In Touch</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="contact-form white-bg text-center">
-						<h3>Contact Us</h3>
-						<p>Working contact form along send mail feature with contact form validation</p>
-						<form id="contact-form" class="form-message" action="form/contact.php" method="post">
-							<div class="form-results"></div>
-							<div class="form-group row fix-gutter-10">
-								<div class="form-field col-sm-6 gutter-10 form-m-bttm">
-									<input name="contact-name" type="text" placeholder="Full Name *"
-										class="form-control required">
-								</div>
-								<div class="form-field col-sm-6 gutter-10">
-									<input name="contact-email" type="email" placeholder="Email *"
-										class="form-control required email">
-								</div>
-							</div>
-							<div class="form-group row fix-gutter-10">
-								<div class="form-field col-md-6 gutter-10 form-m-bttm">
-									<input name="contact-phone" type="text" placeholder="Phone Number *"
-										class="form-control required">
-								</div>
-								<div class="form-field col-md-6 gutter-10">
-									<input name="contact-subject" type="text" placeholder="Subject *"
-										class="form-control required">
-								</div>
-							</div>
-							<div class="form-group row">
-								<div class="form-field col-md-12">
-									<textarea name="contact-message" placeholder="Messages *"
-										class="txtarea form-control required"></textarea>
-								</div>
-							</div>
-							<input type="text" class="hidden" name="form-anti-honeypot" value="">
-							<button type="submit" class="button solid-btn sb-h">Submit</button>
-						</form>
-					</div>
-				</div><!-- .col  -->
-				<div class="col-md-6">
-					<div class="contact-info white-bg">
-						<div class="row">
-							<div class="col-sm-6">
-								<h6><em class="fa fa-envelope"></em> example@gmail.com</h6>
-							</div>
-							<div class="col-sm-6">
-								<h6><em class="fa fa-phone"></em> (+123) 456 - 7890</h6>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<h6><em class="fa fa-map-marker"></em> 217 Summit Boulevard Birmingham, AL 35243</h6>
-							</div>
-						</div>
-					</div>
-					<div id="gMap" class="google-map"></div>
-				</div><!-- .col  -->
-			</div><!-- .row  -->
-		</div><!-- .container  -->
-	</div><!-- .contact-section  -->
+<!-- Start .contact-section  -->
+<div id="contacts" class="contact-section section gradiant-background pb-90">
+    <div class="container">
+        <div class="section-head heading-light text-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="heading heading-light">Ready to Simplify Your Scheduling?</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-info white-bg">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h6><em class="fa fa-phone"></em> Phone: +91 9061432814</h6>
+                        </div>
+                        <div class="col-sm-12">
+                            <h6><em class="fa fa-envelope"></em> Email: info@slotize.com</h6>
+                        </div>
+                        <div class="col-sm-12">
+                            <h6><em class="fa fa-globe"></em> Website: <a href="https://connect.tltechnologies.net" target="_blank">https://connect.tltechnologies.net</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .col  -->
+            <div class="col-md-6">
+                <div class="cta-buttons text-center">
+                    <button class="button solid-btn sb-h">Book Your Free Demo</button>
+                    <button class="button solid-btn sb-h">Contact Support</button>
+                </div>
+            </div><!-- .col  -->
+        </div><!-- .row  -->
+    </div><!-- .container  -->
+</div><!-- .contact-section  -->
 
 
 	<!-- Start .footer-section  -->
@@ -741,17 +574,111 @@
 					</ul>
 					<ul class="social-list inline-list">
 						<li><a href="#"><em class="fa fa-facebook"></em></a></li>
-						<li><a href="#"><em class="fa fa-twitter"></em></a></li>
-						<li><a href="#"><em class="fa fa-google-plus"></em></a></li>
-						<li><a href="#"><em class="fa fa-pinterest"></em></a></li>
+						<!-- <li><a href="#"><em class="fa fa-twitter"></em></a></li> -->
+						<!-- <li><a href="#"><em class="fa fa-google-plus"></em></a></li> -->
+						<!-- <li><a href="#"><em class="fa fa-pinterest"></em></a></li> -->
 						<li><a href="#"><em class="fa fa-linkedin"></em></a></li>
 						<li><a href="#"><em class="fa fa-instagram"></em></a></li>
 					</ul>
 					<ul class="footer-links inline-list">
-						<li>Copyright © 2018 AppsLand. Template Made by <a target="_blank"
-								href="http://softnio.com/">Softnio</a></li>
-						<li><a href="#">Privacy Policy</a></li>
+						<li>Copyright © 2024 <a target="_blank" href="https://www.tltechnologies.net/">TL Technologies</a></li>
+						<li><a href="javascript:void(0)" class="modal-trigger" data-modal="termsModal">Terms of Service</a></li>
+						<li><a href="javascript:void(0)" class="modal-trigger" data-modal="privacyModal">Privacy Policy</a></li>
 					</ul>
+					
+					<!-- Custom Modals -->
+					<div id="termsModal" class="custom-modal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h3>Terms of Service</h3>
+								<span class="modal-close">&times;</span>
+							</div>
+							<div class="modal-body">
+								<h4>Last updated: December 2024</h4>
+								
+								<h5>1. Acceptance of Terms</h5>
+								<p>By accessing or using SLOTIZE ("Service"), you agree to abide by the following Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the Service.</p>
+					
+								<h5>2. Use of Service</h5>
+								<p>You may use SLOTIZE only for lawful purposes. You agree not to:</p>
+								<ul>
+									<li>Violate any applicable laws or regulations.</li>
+									<li>Use the Service in any way that could damage, disable, or impair the platform’s operation.</li>
+								</ul>
+					
+								<h5>3. Account Registration</h5>
+								<p>To access the Service, you may need to create an account. You agree to provide accurate, complete, and up-to-date information during the registration process.</p>
+					
+								<h5>4. Subscription and Billing</h5>
+								<p>SLOTIZE operates on a subscription basis. Subscription fees are outlined on the website. Payments are processed monthly or quarterly, depending on your chosen plan. All fees are non-refundable.</p>
+					
+								<h5>5. User Responsibilities</h5>
+								<p>You are responsible for maintaining the confidentiality of your account and password. You agree to notify SLOTIZE immediately if you suspect any unauthorized access to your account.</p>
+					
+								<h5>6. Termination</h5>
+								<p>SLOTIZE may suspend or terminate your access if you violate any terms or for any reason at its discretion. You may cancel your subscription at any time via the account settings.</p>
+					
+								<h5>7. Limitation of Liability</h5>
+								<p>SLOTIZE will not be liable for any damages arising from the use or inability to use the Service. This includes, but is not limited to, direct, indirect, incidental, or punitive damages.</p>
+					
+								<h5>8. Governing Law</h5>
+								<p>These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction].</p>
+					
+								<h5>9. Amendments</h5>
+								<p>SLOTIZE reserves the right to amend these Terms at any time. The changes will be posted here and become effective immediately upon publication.</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Privacy Policy Modal -->
+					<div id="privacyModal" class="custom-modal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h3>Privacy Policy</h3>
+								<span class="modal-close">&times;</span>
+							</div>
+							<div class="modal-body">
+								<h4>Last updated: December 2024</h4>
+					
+								<h5>1. Information We Collect</h5>
+								<p>We collect the following personal data:</p>
+								<ul>
+									<li>Name, email address, phone number, etc.</li>
+									<li>Billing Information: Credit card details for processing payments.</li>
+									<li>Usage Data: Information on how you use the Service, including IP address, browser type, and device information.</li>
+								</ul>
+					
+								<h5>2. How We Use Your Information</h5>
+								<p>We use your data to:</p>
+								<ul>
+									<li>Provide, maintain, and improve the Service.</li>
+									<li>Process payments and provide receipts.</li>
+									<li>Send marketing and promotional emails (you can opt-out at any time).</li>
+									<li>Analyze usage data to improve the Service.</li>
+								</ul>
+					
+								<h5>3. Sharing of Information</h5>
+								<p>We do not sell or rent your personal information to third parties. We may share your information with trusted service providers who help with operations, such as payment processors, email service providers, and technical support.</p>
+					
+								<h5>4. Cookies</h5>
+								<p>SLOTIZE uses cookies to track user activity and improve your experience. Cookies help us analyze website traffic and optimize our platform. You may choose to accept or decline cookies via your browser settings.</p>
+					
+								<h5>5. Data Security</h5>
+								<p>We use industry-standard security measures to protect your personal information. However, no method of transmission over the Internet is 100% secure. While we strive to protect your data, we cannot guarantee complete security.</p>
+					
+								<h5>6. Your Rights</h5>
+								<p>You have the right to access, correct, and delete your personal information. To exercise these rights, please contact us via email or through your account settings.</p>
+					
+								<h5>7. Changes to This Privacy Policy</h5>
+								<p>We may update this Privacy Policy from time to time. The updated version will be posted on this page, and the changes will take effect immediately upon publication.</p>
+					
+								<h5>8. Contact Us</h5>
+								<p>For any questions regarding our Terms of Service or Privacy Policy, please contact us at:</p>
+								<p>📧 Email: info@slotize.com</p>
+								<p>📞 Phone: +91 906143281</p>
+							</div>
+						</div>
+					</div>
 				</div><!-- .col  -->
 			</div><!-- .row  -->
 		</div><!-- .container  -->
@@ -773,6 +700,7 @@
 
 	<script src="assets/js/jquery.bundle.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script src="assets/js/modal.js"></script>
 
 </body>
 
