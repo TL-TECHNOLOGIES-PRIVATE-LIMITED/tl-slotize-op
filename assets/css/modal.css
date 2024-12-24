@@ -121,7 +121,7 @@ body.modal-open {
 
 
 #cookieConsent {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(82, 82, 82, 0.9);
     color: #ffffff;
     padding: 15px;
     position: fixed;
@@ -139,4 +139,64 @@ body.modal-open {
 }
 .d-none {
     display: none !important;
+}
+
+
+/* General Styles */
+.contact-area {
+    padding-bottom: 90px;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-contact-box h6 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.custom-contact-box h6 em {
+    color: #ff6f61;
+    margin-right: 10px;
+}
+
+/* Button Styles */
+.cta-section .btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .custom-contact-box {
+        margin-bottom: 20px;
+    }
+
+    .cta-section .btn {
+        width: 100%;
+    }
 }
