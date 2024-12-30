@@ -242,6 +242,22 @@ body.modal-open {
     font-size: 14px;
     color: #2b56f5;
 }
+@media (max-width: 768px) {
+    .industry-card {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .industry-icon {
+        margin: 0 auto 25px; /* Center the icon and add bottom margin */
+    }
+
+    .industry-card h4, 
+    .industry-card p, 
+    .industry-stats {
+        text-align: center;
+    }
+}
 
 .section-subtitle {
     color: #2b56f5;
