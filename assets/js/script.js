@@ -170,14 +170,23 @@
 	}
 	
 	// Preloader
+	// var $preload = $('#preloader');
+	// if ($preload.length > 0) {
+	// 	$(window).on('load', function() {
+	// 	  $preload.children().fadeOut(300);
+	// 	  $preload.delay(150).fadeOut(500);
+	// 	  $('body').delay(100).css({'overflow':'visible'});
+	// 	});
+	// }
 	var $preload = $('#preloader');
 	if ($preload.length > 0) {
 		$(window).on('load', function() {
-		  $preload.children().fadeOut(300);
-		  $preload.delay(150).fadeOut(500);
-		  $('body').delay(100).css({'overflow':'visible'});
+		  $preload.children().fadeOut(2000);
+		  $preload.delay(500).fadeOut(500);
+		  $('body').delay(1000).css({'overflow':'visible'});
 		});
 	}
+	
 	
 	//WOW init
 	new WOW().init();
