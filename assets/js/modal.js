@@ -113,26 +113,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const cookiePopup = document.getElementById("cookiePopup");
-    const acceptCookie = document.getElementById("acceptCookie");
-    const rejectCookie = document.getElementById("rejectCookie");
+//   document.addEventListener("DOMContentLoaded", function () {
+//     const cookiePopup = document.getElementById("cookiePopup");
+//     const acceptCookie = document.getElementById("acceptCookie");
+//     const rejectCookie = document.getElementById("rejectCookie");
 
-    // Check if the user has already made a choice
-    const cookieConsent = localStorage.getItem("cookieConsent");
-    if (!cookieConsent) {
-      cookiePopup.classList.remove("hidden");
-    }
+//     // Check if the user has already made a choice
+//     const cookieConsent = localStorage.getItem("cookieConsent");
+//     if (!cookieConsent) {
+//       cookiePopup.classList.remove("hidden");
+//     }
 
-    // Handle Accept button
-    acceptCookie.addEventListener("click", function () {
-      localStorage.setItem("cookieConsent", "accepted");
-      cookiePopup.classList.add("hidden");
-    });
+//     // Handle Accept button
+//     acceptCookie.addEventListener("click", function () {
+//       localStorage.setItem("cookieConsent", "accepted");
+//       cookiePopup.classList.add("hidden");
+//     });
 
-    // Handle Reject button
-    rejectCookie.addEventListener("click", function () {
-      localStorage.setItem("cookieConsent", "rejected");
-      cookiePopup.classList.add("hidden");
-    });
-  });
+//     // Handle Reject button
+//     rejectCookie.addEventListener("click", function () {
+//       localStorage.setItem("cookieConsent", "rejected");
+//       cookiePopup.classList.add("hidden");
+//     });
+//   });
