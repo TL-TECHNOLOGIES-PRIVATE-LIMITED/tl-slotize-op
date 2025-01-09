@@ -1,7 +1,11 @@
 {
-    "version": 2,
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/(.*)", "status": 404, "dest": "/404.html" }
-    ]
-  }
+  "version": 2,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/400", "status": 400, "dest": "/400.html" },
+    { "src": "/403", "status": 403, "dest": "/403.html" },
+    { "src": "/500", "status": 500, "dest": "/500.html" },
+    { "src": "/503", "status": 503, "dest": "/503.html" },
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  ]
+}
