@@ -281,3 +281,45 @@ body.modal-open {
 .font-semibold {
     font-weight: bold;
 }
+
+
+
+/* cookie consent */
+
+.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+  }
+  .cookie-popup p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .cookie-popup button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn-accept {
+    background-color: #28a745;
+    color: white;
+  }
+  .btn-reject {
+    background-color: #dc3545;
+    color: white;
+  }
+  .cookie-popup.hidden {
+    display: none;
+  }
