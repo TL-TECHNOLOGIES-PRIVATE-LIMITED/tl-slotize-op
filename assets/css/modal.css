@@ -323,3 +323,9 @@ body.modal-open {
   .cookie-popup.hidden {
     display: none;
   }
+
+
+  .bulleted-list {
+    list-style-type: disc;
+    margin-left: 20px;
+  }  
